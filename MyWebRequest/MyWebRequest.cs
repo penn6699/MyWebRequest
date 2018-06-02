@@ -8,7 +8,7 @@ public class MyWebRequest
     public MyWebRequest() { }
 
     /// <summary>
-    /// Get方式提交或获取网络数据
+    /// Get请求
     /// </summary>
     /// <param name="url">url地址</param>
     /// <param name="param">参数</param>
@@ -54,7 +54,7 @@ public class MyWebRequest
     }
 
     /// <summary>
-    /// Post方式提交或获取网络数据
+    /// Post请求
     /// </summary>
     /// <param name="url">url地址</param>
     /// <param name="param">参数</param>
@@ -113,7 +113,7 @@ public class MyWebRequest
 
 
     /// <summary>
-    /// Get方式提交或获取网络数据
+    /// Get请求
     /// </summary>
     /// <param name="url">url地址</param>
     /// <param name="param">参数</param>
@@ -124,7 +124,7 @@ public class MyWebRequest
     }
 
     /// <summary>
-    /// Post方式提交或获取网络数据
+    /// Post请求
     /// </summary>
     /// <param name="url">url地址</param>
     /// <param name="param">参数</param>

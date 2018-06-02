@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebRequest</name>
+    </assembly>
+    <members>
+        <member name="M:MyWebRequest._Get(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">url地址</param>
+            <param name="param">参数</param>
+            <param name="Cookies">Cookies参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebRequest._Post(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Post请求
+            </summary>
+            <param name="url">url地址</param>
+            <param name="param">参数</param>
+            <param name="Cookies">Cookies参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebRequest.Get(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Get请求
+            </summary>
+            <param name="url">url地址</param>
+            <param name="param">参数</param>
+            <param name="Cookies">Cookies参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MyWebRequest.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Post请求
+            </summary>
+            <param name="url">url地址</param>
+            <param name="param">参数</param>
+            <param name="Cookies">Cookies参数</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

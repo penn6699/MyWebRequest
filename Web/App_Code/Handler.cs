@@ -10,7 +10,7 @@ public class Handler : IHttpHandler
     public void ProcessRequest(HttpContext context)
     {
         context.Response.ContentType = "text/plain";
-        context.Response.Write("Hello World");
+        context.Response.Write("测试 MyWebRequest 抓取文件...");
 
         string path = context.Server.MapPath("~/Data");
         if (!Directory.Exists(path))
@@ -32,11 +32,12 @@ public class Handler : IHttpHandler
             ms.Close();
         }
 
-        using (Stream ms = MyWebRequest.Get("http://www.jyubbs.com/bbs/forum.php"))
+        using (Stream ms = MyWebRequest.Get("http://www.jyubbs.com/bbs/forum.php?a=123"))
         {
-            using (StreamReader sr = new StreamReader(ms))
+            using (StreamReader sr = new StreamReader(ms, Encoding.UTF8))
             {
                 string re = sr.ReadToEnd();
+                
                 StreamWriter sw = new StreamWriter(File.Open(path + "/http-" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + ".html", FileMode.Append));
                 sw.Write(re);
                 sw.Flush();
@@ -48,9 +49,7 @@ public class Handler : IHttpHandler
         
 
 
-
-
-
+        context.Response.Write("\n\n抓取完成");
 
 
 

@@ -4,11 +4,16 @@
         <name>MyWebRequest</name>
     </assembly>
     <members>
+        <member name="T:MyWebRequest">
+            <summary>
+            我的网络请求
+            </summary>
+        </member>
         <member name="M:MyWebRequest._Get(System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.String})">
             <summary>
             Get请求
             </summary>
-            <param name="url">url地址</param>
+            <param name="url">url地址。可带参数</param>
             <param name="param">参数</param>
             <param name="Cookies">Cookies参数</param>
             <returns></returns>
@@ -26,7 +31,7 @@
             <summary>
             Get请求
             </summary>
-            <param name="url">url地址</param>
+            <param name="url">url地址。可带参数</param>
             <param name="param">参数</param>
             <param name="Cookies">Cookies参数</param>
             <returns></returns>
